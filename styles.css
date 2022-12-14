@@ -1,0 +1,880 @@
+@font-face {
+    font-family: 'gotham pro bold';
+    src: url(/fonts/gothampro_bold.ttf);
+}
+
+@font-face {
+    font-family: 'gotham pro medium';
+    src: url(/fonts/gothampro_medium.ttf);
+}
+
+@font-face {
+    font-family: 'gotham pro light';
+    src: url(/fonts/gothampro_light.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "gotham pro medium";
+    font-size: 14px;
+    line-height: 13px;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-wrapper {
+    max-width: 1170px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+.logo-and-phone,
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.logo-wrapper img {
+    margin-top: 23px;
+    margin-right: 20px;
+    margin-left: -4px;
+}
+
+.line {
+    border-left: 1px solid #009FE3;
+    width: 6px;
+    height: 31px;
+    margin-bottom: 9px;
+}
+
+.logo-name {
+    margin-left: 20px;
+    line-height: 22px;
+    color: #009FE3;
+}
+
+.phone,
+.email {
+    font-family: "gotham pro bold";
+
+}
+
+.email {
+    margin-top: 35px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.phone {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-link {
+    margin-right: 30px;
+    margin-top: 21px;
+    position: relative;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #1A191C;
+}
+
+.dropdown-arrow {
+    border-bottom: 2px solid #B1B1B1;
+    border-right: 2px solid #B1B1B1;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg) translateY(-50%);
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 4px;
+}
+
+/* .menu-link .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: white;
+}
+
+.menu-link:hover>ul,
+.menu-link ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+} */
+
+
+.dropdown {
+    display: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0 10px;
+
+}
+
+.city-wrapper {
+    margin-top: 21px;
+    margin-right: 13px;
+}
+
+.mobile-email {
+    display: none;
+}
+
+.city-button {
+    margin-left: 5px;
+    display: inline-block;
+    color: #009FE3;
+}
+
+.city-button .dropdown-arrow {
+    border-bottom: 2px solid #009FE3;
+    border-right: 2px solid #009FE3;
+}
+
+.intro {
+    height: 972px;
+    background: url(./img/bg2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 325px;
+    position: relative;
+}
+
+.intro-wrapper h1 {
+    font-family: "gotham pro bold";
+    font-size: 28px;
+    line-height: 35px;
+    max-width: 450px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+
+.intro-wrapper p {
+    font-family: "gotham pro light";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+
+.option-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.option-text1 {
+    max-width: 225px;
+    line-height: 18px;
+    margin-left: 19px;
+    margin-bottom: 25px;
+}
+
+.option-image2 {
+    margin-bottom: 32px;
+    margin-left: 5px;
+}
+
+.option-text2 {
+    max-width: 241px;
+    line-height: 18px;
+    margin-left: 19px;
+    margin-bottom: 25px;
+}
+
+.option-image3 {
+    margin-left: 4px;
+    margin-bottom: 48px;
+}
+
+.option-text3 {
+    max-width: 198px;
+    line-height: 18px;
+    margin-left: 19px;
+    margin-bottom: 25px;
+}
+
+.intro-link {
+    color: #009FE3;
+}
+
+.offer-wrapper {
+    position: absolute;
+    top: 325px;
+    right: 0;
+    width: 370px;
+    height: 465px;
+
+}
+
+.offer-text1 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 62px;
+    margin-left: 24px;
+    margin-right: 26px;
+    margin-bottom: 26px;
+}
+
+.offer-input {
+    margin-left: 23px;
+    margin-right: 25px;
+    margin-bottom: 12px;
+    width: 322px;
+    height: 60px;
+    padding: 5px;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    box-shadow: none;
+
+}
+
+.offer-input-phone {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    height: 20px;
+    left: 47px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 13px;
+}
+
+label:after {
+    content: " *";
+    color: #dd6666;
+    ;
+}
+
+.offer-input:placeholder-shown+label {
+    display: block;
+}
+
+.offer-input:focus+label {
+    display: none;
+}
+
+.offer-button {
+    margin-left: 23px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    width: 322px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    background-color: #009FE3;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.offer-text2,
+.offer-text3 {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    width: 275px;
+    margin: 0 auto;
+}
+
+.offer-wrapper a {
+    color: #009FE3;
+}
+
+.quiz {
+    background-color: #F8F8F8;
+}
+
+.quiz-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 137px;
+    height: 950px;
+}
+
+.quiz-header1 {
+    font-family: "gotham pro bold";
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.quiz-header2 {
+    font-family: "gotham pro light";
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    width: 765px;
+    margin: 0 auto;
+    margin-bottom: 71px;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    height: 480px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.quiz-main {
+    margin-top: 27px;
+    margin-right: 43px;
+    margin-bottom: 53px;
+    margin-left: 45px;
+    width: 100%;
+}
+
+.quiz-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 36px;
+}
+
+.step {
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: #C4C4C4;
+}
+
+.quiz-question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.quiz-question-number {
+    width: 44px;
+    height: 44px;
+    border: 2px solid #009FE3;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quiz-question-text {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+
+.quiz-answer {
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+textarea {
+    line-height: 150%;
+    height: 184px;
+    resize: none;
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    padding: 21px 23px;
+}
+
+textarea::placeholder {
+    color: #1A191C;
+    font-size: 13px;
+}
+
+.quiz-buttons {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.quiz-next {
+    width: 143px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #009FE3;
+    color: white;
+    border-radius: 6px;
+}
+
+.quiz-next .inside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-next .arrow {
+    margin-left: 11px;
+    font-size: 20px;
+}
+
+.answer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.check-container input {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    appearance: none;
+}
+
+.check-container input:checked {
+    background-color: #009FE3;
+}
+
+.checkbox-text {
+    display: inline-block;
+    font-size: 13px;
+    max-width: 360px;
+    padding-top: 6px;
+
+    margin-left: 12px;
+}
+
+.quiz-back {
+    width: 143px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: none;
+}
+
+.quiz-back .inside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quiz-back .arrow {
+    margin-right: 11px;
+    font-size: 20px;
+    color: #009FE3;
+}
+
+.quiz-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 189px;
+}
+
+.quiz-radio input {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background: none;
+    border: 1px solid grey;
+    appearance: none;
+    margin: 10px;
+}
+
+.quiz-radio input:checked {
+    box-shadow: inset 0 0 0 9px #009FE3
+}
+
+.last-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-step-header {
+    margin-top: 98px;
+    margin-bottom: 54px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 808px;
+    text-align: center;
+}
+
+.step-text {
+    width: 365px;
+}
+
+.last-step button {
+    margin-bottom: 51px;
+}
+
+.last-step label {
+    left: 71px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.current-step {
+    color: #1A191C;
+}
+
+.mobile-menu, .mobile-quiz-activation, .offer-text-mobile, .quiz-close-button {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 360px) {
+    header {
+        position: relative;
+    }
+
+    .header-wrapper {
+        height: fit-content;
+    }
+
+    .logo-and-phone {
+        width: 100vw;
+        height: 69px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 17px;
+    }
+
+    .logo-wrapper img {
+        width: 113px;
+        margin-top: 0px;
+        margin-left: 4px;
+    }
+
+    .line,
+    .logo-name,
+    .email {
+        display: none;
+    }
+
+    .phone {
+        font-size: 14px;
+        line-height: 13px;
+        margin-top: 0px;
+        margin-right: 20px
+    }
+
+    .mobile-menu {
+        display: block;
+        border: none;
+        background-color: white;
+    }
+
+    .nav-wrapper {
+        display: none;
+        flex-direction: column-reverse;
+        margin: 0 18px;
+    }
+
+    .nav-wrapper-open {
+        display: flex;
+    }
+
+    .mobile-email {
+        display: block;
+    }
+
+    .city-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 22px;
+    }
+
+    .city {
+        margin-top: 21px;
+        margin-bottom: 26px;
+    }
+
+    .line-mobile {
+        border-top: 1px solid#E3E3E3;
+        margin: 0 18px;
+        margin-bottom: 29px;
+    }
+
+    .dropdown-mobile {
+        display: none;
+        position: relative;
+        margin: 20px;
+        width: 105%;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100vh;
+    }
+
+
+    .intro {
+        background: url(./img/mobile-bg.jpg) no-repeat center;
+        background-size: cover;
+        height: calc(100vh - 69px);
+        ;
+    }
+
+    .intro-wrapper {
+        padding: 0 18px;
+        padding-top: 56px;
+    }
+
+    .intro-wrapper h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .intro-wrapper p {
+        font-family: "gotham pro bold";
+        font-size: 21px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+
+    .offer-wrapper {
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+
+    .offer-button {
+        margin: 0;
+        position: relative;
+    }
+
+    .mobile-quiz-activation {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .offer-text1,
+    .offer-text2,
+    .offer-text3,
+    .offer-input-phone,
+    .intro-link {
+        display: none;
+    }
+
+    .quiz {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 5;
+    }
+
+    .quiz-header1, .quiz-header2, .quiz-steps {
+        display: none;
+    }
+
+    .quiz-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .quiz-container {
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .quiz-image {
+        object-fit: cover;
+        height: 200px;
+    }
+
+    .quiz-main {
+        margin: 0;
+        min-height: calc(100vh - 200px);
+        
+    }
+
+    .quiz-question {
+        align-items: center;
+        margin: 5px 18px;
+    }
+
+    .quiz-question-number {
+        padding: 0 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .quiz-question-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .quiz-answer {
+        flex-direction: column;
+        margin: 18px;
+    }
+
+    .quiz-buttons {
+        margin: 0 18px;
+        width: auto;
+        margin-bottom: 18px;
+    }
+
+    .check-container input {
+        padding: 12px;
+    }
+
+    .quiz-radio {
+        flex-direction: column;
+    }
+
+    .offer-text-mobile {
+        display: block;
+        font-size: 15px;
+        margin-top: 150px;
+        margin-left: 0;
+        margin-right: 0;
+        color: #1A191C;
+    }
+
+    .last-step {
+        height: 100vh;
+        padding: 0 18px;
+    }
+
+    .offer-input, .step-text {
+        margin: 0;
+        width: 322px;
+        margin-bottom: 16px;
+    }
+
+    .offer-input-phone {
+        margin: 0;
+        width: 322px;
+        margin-bottom: 16px;
+    }
+
+    .last-step label {
+        left: 29px;
+    }
+
+    .last-step button {
+        margin-bottom: 0;
+    }
+
+    .last-step-header {
+        display: none;
+    }
+
+    .offer-text2 {
+        margin-top: 105px;
+        margin-bottom: 0;
+    }
+
+    .offer-text2, .offer-text3 {
+        width: 275px;
+    }
+
+    .quiz-close-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        margin: 21px;
+        z-index: 20;
+    }
+}
+
+.open {
+    display: block;
+}
